@@ -8,8 +8,11 @@ VIIFirebaseNotificationsHandler is a library written in Swift that simplifies th
 [![Language Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://img.shields.io/badge/language-swift-orange.svg)
 
 ## Features
-- Provide easy calls for subscription and unsubscription to Firebase topics.
-- Provide single calls for `didReceiveRemoteNotification`, `didRegisterForRemoteNotificationsWithDeviceToken`
+- Provide handling for registeration of the app for remote notifications.
+- Provide handling for subscription and unsubscription to Firebase topics.
+- Provide notification handling in `didReceiveRemoteNotification`, `didRegisterForRemoteNotificationsWithDeviceToken` and more.
+- Works for all the application states: Foreground, Background, Suspended and Terminated!
+- Provide single line calls to achieve most of the above.
 
 ## Requirements
 
@@ -149,6 +152,29 @@ This function takes another function as a parameter. The function should do the 
 ```swift
 VIIFirebaseNotificationsHandler.setBadgeCountWithFunction(badgeCountCalculation)
 ```
+
+### Notification Content
+
+In order for this library to correctly handle firebase notification based on different types, the JSON sent to FCM must be structures in a way similar to this:
+```json
+{  
+  "content_available": true,
+  "data": {
+  	"type": "notificationType1",
+  	"item_id": "1"
+  },
+  "notification": {
+    "title": "Notification Title",
+    "body": "Notification Subtitle",
+    "sound": "default"
+  },
+  "condition": "'topic1' in topics"
+}
+```
+**Notes:**
+- `"content_available": true` must be included.
+- Under the `"data"` key, `"type"` key must be included (to be handled by the function you provide).
+- Under the `"data"` key, you can include any other information to use it in your handler function e.g. an item identifier.
 
 ---
 
