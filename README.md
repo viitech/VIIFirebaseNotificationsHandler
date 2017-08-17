@@ -126,7 +126,7 @@ VIIFirebaseNotificationsHandler.setupNotifications()
 ```
 The above code will present the alert to the user for allowing notifications. It must be added where necessary:
 - If users should receive notifications only after logging in, implement the code on success of the login process.
-- If users should receive notifications without loggin in/app has no login, implement the code in `didFinishLaunchingWithOptions` before the [codes described above](#didFinishLaunchingWithOptions).
+- If users should receive notifications without loggin in/app has no login, implement the code in `didFinishLaunchingWithOptions` before the [codes described above](#didfinishlaunchingwithoptions).
 
 #### Refreshing Subscriptions
 To refresh the subscriptions to Firebase based on new topics (after login or a specific action):
