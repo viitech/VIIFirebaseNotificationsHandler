@@ -158,4 +158,4 @@ Alamofire is owned and maintained by the [Vii Tech Solutions](http://viitech.net
 
 ## License
 
-VIIFirebaseNotificationsHandler is released under the MIT license. [See LICENSE](https://github.com/VIIFirebaseNotificationsHandler/VIIFirebaseNotificationsHandler/blob/master/LICENSE) for details.
+VIIFirebaseNotificationsHandler is released under the MIT license. [See LICENSE](https://github.com/viitech/VIIFirebaseNotificationsHandler/blob/master/LICENSE) for details.
