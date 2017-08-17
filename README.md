@@ -18,7 +18,7 @@ VIIFirebaseNotificationsHandler is a library written in Swift that simplifies th
 
 - iOS 8.0+
 - Xcode 8.2.1+
-- Swift 2.3, 3.0
+- Swift 2.3, Swift 3.0
 
 ## Communication
 
@@ -47,7 +47,7 @@ pod 'VIIFirebaseNotificationsHandler'
 
 **Swift 2.3:**
 ```ruby
-pod 'VIIFirebaseNotificationsHandler', :git => 'https://github.com/viitech/VIIFirebaseNotificationsHandler.git', :branch => 'Swift 2.3'
+pod 'VIIFirebaseNotificationsHandler', :git => 'https://github.com/viitech/VIIFirebaseNotificationsHandler.git', :branch => 'Swift2.3'
 ```
 
 Then, run the following command:
